@@ -1,0 +1,86 @@
+.snpCard {
+    width: 1170px;
+    height: 640px;
+    padding: 48px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}
+
+.snapCardCon {
+    height: 544px;
+    width: 1074px;
+    border-radius: 15px;
+    background-image: url("image/snpCard.png");
+}
+
+.cardDetail {
+    width: 1074px;
+    height: 544px;
+    padding: 80px 64px 80px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cardDetail h2 {
+    height: 52px;
+    padding-bottom: 16px;
+    color: white;
+    margin: 0px;
+    font-weight: bolder;
+}
+
+.cardDetail span {
+    font-size: large;
+    padding-bottom: 24px;
+}
+
+.profit {
+    padding-top: 64px;
+    padding-bottom: 48px;
+    width: 914px;
+    height: 248px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+}
+
+.profitCon {
+    height: 136px;
+    display: flex;
+    gap: 4px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cardPic {
+    height: 80px;
+    width: 80px;
+}
+
+.profitCon h5,.profitCon span {
+    color: white;
+    padding: 0px !important;
+}
+
+.profitCon h5 {
+    font-size: 14px;
+    height: 20px;
+}
+
+.profitCon span {
+    font-size: 19px;
+    height: 28px;
+    font-weight: bolder;
+}
+
+.cardDetail .seeAll {
+    background-color: #da291c;
+    height: 48px;
+    width: 335.05px;
+}
+
+#cardBut {
+    padding: 0px;
+}

@@ -1,0 +1,219 @@
+.contentContainner {
+    display: grid;
+    grid-template-rows: 485.25px 342.48px 392.13px 437.953px;
+    grid-template-columns: 1074px;
+    row-gap: 80px;
+    margin-top: -24px;
+}
+
+.content {
+    padding: 24px 48px;
+    display: flex;
+    justify-content: center;
+}
+
+.promoPic {
+    height: 485.25px;
+}
+
+#proPic {
+    height: 449.25px;
+    width: 1074px;
+}
+
+.ball {
+    height: 12px;
+    width: 12px;
+}
+
+.ballContainner {
+    display: flex;
+    gap: 8px;
+    padding-top: 24px;
+    justify-content: center;
+}
+
+.oppotunity {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.oppotunity h2{
+    margin: 0;
+    padding-bottom: 8px;
+    color: #000000e0;
+}
+
+.oppotunity span {
+    color: #000000e0;
+}
+
+.event {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding:40px 0 16px 0;
+    height: 212.48px;
+    width: 1074px;
+    gap: 24px;
+}
+
+.eventPic {
+    height: 98px;
+    width: 195.59px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.eventText {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: -10px;
+    gap: 4px;
+    background-color: #f7f1e6;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.seeAll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 213.3px;
+    color: white !important;
+    background-color: #4c0b0b;
+    height: 40px;
+    border-radius: 45px;
+}
+
+.promoEvent {
+    height: 392.13px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+.promoText {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promoText h2 {
+    margin: 0px;
+    height: 28px;
+}
+
+.promoText h5 {
+    margin: 0px;
+    height: 28px;
+}
+
+.seeAllPromo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.seeAllPromo span {
+    color: #da291c;
+}
+
+#arrowLeft {
+    color: #da291c;
+    height: 14px;
+    width: 14px;
+}
+
+.promoText .seeAllPromo {
+    justify-items: end;
+    justify-content: end;
+}
+
+.promoEventPic {
+    display: block;
+    height: 332.13px;
+}
+
+.picSlide {
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    gap: 15px;
+    height: 296.13px;
+}
+
+#slidePic {
+    width: 710.66px;
+    height: 296.13px;
+}
+
+.bestSell {
+    display: flex;
+    flex-direction: column;
+    height: 437.953px;
+    row-gap: 32px;
+    padding-bottom: 24px;
+}
+
+.menuCardContain {
+    height: 377.953px;
+    display: grid;
+    column-gap: 16px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.menuCard {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.cardImage {
+    height: 229.953px;
+    width: 256.5px;
+}
+
+.cardTextContain {
+    display: flex;
+    flex-direction: column;
+    height: 148px;
+    width: 256.5px;
+    padding: 16px 24px;
+    gap: 8px;
+}
+
+.textName {
+    display: flex;
+}
+
+.promoText span {
+    color: black;
+}
+
+.butCon {
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+    row-gap: 8px;
+}
+
+.butCon .seeAll {
+    width: 208.5px;
+    height: 32px;
+    padding: 4px 15px;
+}
+
+#cart {
+    background-color: #da291c;
+}
+
+#detail {
+    background-color: white;
+    color: black !important;
+}
+
+#price {
+    font-weight: bolder;
+}

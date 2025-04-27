@@ -1,0 +1,81 @@
+.footer {
+    height: 490px;
+    background-color: #4c0b0b;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    padding: 80px 48px;
+    margin: 0 75.5px;
+    gap: 80px;
+}
+
+.service {
+    width: 745.5px;
+    height: 330px;
+    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 220px 70px;
+    color: white;
+    line-height: 2em;
+}
+
+.service h2, h5 {
+    margin: 0px;
+}
+
+.service h2 {
+    padding-bottom: 8px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.contract {
+    height: 330px;
+    width: 248.5px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    align-self: auto;
+    color: white;
+}
+
+.footerLogo #logo {
+    height: 80px;
+    width: 80px;
+}
+
+.serviceTime h5 {
+    height: 22px;
+}
+
+#longh5 {
+    height: 44px;
+}
+
+.phoneNumber {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+#phone {
+    height: 36px;
+}
+
+.phoneNumber h2 {
+    margin: 0;
+}
+
+.social {
+    display: flex;
+    gap: 1em;
+}
+
+.icon {
+    height: 48px;
+    width: 48px;
+}
