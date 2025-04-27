@@ -30,7 +30,8 @@ body {
 .navbarDetail {
     display: grid;
     height: 56px;
-    width: auto;
+    width: 100%;
+    max-width: 1170px;
     margin: 0 22.5px 0 22.5px;
     grid-template-columns: 78% auto;
     align-items: center;
