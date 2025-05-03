@@ -1,6 +1,8 @@
 .footer {
     height: 490px;
     background-color: #4c0b0b;
+    display: flex;
+    justify-content: center;
 }
 
 .footerContainer {
@@ -8,14 +10,15 @@
     justify-content: center;
     justify-items: center;
     padding: 80px 48px;
-    margin: 0 75.5px;
-    gap: 80px;
+    margin: 0 auto;
+    gap: 5rem;
 }
 
 .service {
-    width: 745.5px;
+    width: 100%;
+    max-width: 745.5px;
     height: 330px;
-    gap: 40px;
+    gap: 2.5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 220px 70px;
@@ -78,4 +81,45 @@
 .icon {
     height: 48px;
     width: 48px;
+}
+
+@media screen and (max-width: 768px) {
+
+
+    .footer {
+        height: 1102px;
+        width: auto;
+    }
+
+    .footerContainer {
+        height: 1102px;
+        padding: 5rem 1rem;
+        margin: 0px;
+        width: 100%;
+        max-width: 768px;
+        flex-direction: column;
+    }
+
+    .service {
+        height: 584px;
+        width: 100%;
+        max-width: 735px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: 208px 178px 118px;
+    }
+
+    .contract {
+        max-width: 735px;
+        width: 100%;
+        height: 278px;
+    }
+
+    .footer #logo {
+        height: 56px;
+        width: 56px;
+    }
+
+    #longh5 {
+        height: 22px;
+    }
 }
