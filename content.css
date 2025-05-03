@@ -1,24 +1,30 @@
 .contentContainner {
-    display: grid;
-    grid-template-rows: 485.25px 342.48px 392.13px 437.953px;
-    grid-template-columns: 1074px;
-    row-gap: 80px;
-    margin-top: -24px;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    width: 100%;
+    max-width: 1074px;
 }
 
 .content {
-    padding: 24px 48px;
+    padding: 1.5rem 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    min-height: calc(100vh - 64px);
     display: flex;
     justify-content: center;
+    width: 100%;
+    max-width: 1170px;
 }
 
-.promoPic {
+/* .promoPic {
     height: 485.25px;
-}
+} */
 
 #proPic {
-    height: 449.25px;
-    width: 1074px;
+    height: auto;
+    width: 100%;
+    max-width: 1074px;
 }
 
 .ball {
@@ -26,10 +32,15 @@
     width: 12px;
 }
 
+#bar {
+    height: 12px;
+    width: 44px;
+}
+
 .ballContainner {
     display: flex;
-    gap: 8px;
-    padding-top: 24px;
+    gap: .5rem;
+    padding-top: 1rem;
     justify-content: center;
 }
 
@@ -37,12 +48,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 8px;
+    gap: .5rem;
 }
 
 .oppotunity h2{
     margin: 0;
-    padding-bottom: 8px;
+    padding-bottom: .5rem;
     color: #000000e0;
 }
 
@@ -53,27 +64,30 @@
 .event {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    padding:40px 0 16px 0;
-    height: 212.48px;
-    width: 1074px;
-    gap: 24px;
+    padding:2.5rem 0 1rem 0;
+    width: 100%;
+    max-width: 1074px;
+    gap: 1.5rem;
 }
 
 .eventPic {
-    height: 98px;
-    width: 195.59px;
+    height: auto;
+    width: 100%;
+    object-fit: cover;
+    vertical-align: middle;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
 }
 
 .eventText {
     display: flex;
-    padding: 16px;
+    padding: 1rem;
+    color: #3c2a1ccc;
     flex-direction: column;
     align-items: center;
     width: 100%;
     margin-top: -10px;
-    gap: 4px;
+    gap: .25rem;
     background-color: #f7f1e6;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -83,7 +97,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 213.3px;
+    width: 100%;
+    max-width: 213.3px;
     color: white !important;
     background-color: #4c0b0b;
     height: 40px;
@@ -119,7 +134,7 @@
 }
 
 .seeAllPromo span {
-    color: #da291c;
+    color: #da291c !important;
 }
 
 #arrowLeft {
@@ -147,20 +162,20 @@
 }
 
 #slidePic {
-    width: 710.66px;
-    height: 296.13px;
+    width: 100%;
+    max-width: 710.66px;
+    height: auto;
 }
 
 .bestSell {
     display: flex;
     flex-direction: column;
-    height: 437.953px;
-    row-gap: 32px;
-    padding-bottom: 24px;
+    height: auto;
+    row-gap: .75rem;
+    padding-bottom: 2rem;
 }
 
 .menuCardContain {
-    height: 377.953px;
     display: grid;
     column-gap: 16px;
     grid-template-columns: repeat(4, 1fr);
@@ -168,11 +183,17 @@
 
 .menuCard {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: .5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
 }
 
 .cardImage {
-    height: 229.953px;
-    width: 256.5px;
+    height: 100%;
+    max-height: 229.953px;
+    width: 100%;
+    max-width: 256.5px;
 }
 
 .cardTextContain {
@@ -195,8 +216,9 @@
 .butCon {
     display: flex;
     flex-direction: column;
-    margin-top: 8px;
-    row-gap: 8px;
+    align-items: center;
+    margin-top: .5rem;
+    row-gap: .5rem;
 }
 
 .butCon .seeAll {
@@ -207,6 +229,8 @@
 
 #cart {
     background-color: #da291c;
+    width: 100%;
+    max-width: 347.5px;
 }
 
 #detail {
@@ -216,4 +240,62 @@
 
 #price {
     font-weight: bolder;
+}
+
+@media screen and (max-width: 768px) {
+    .contentContainner {
+        gap: 3.5rem;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .ball {
+        height: 6px;
+        width: 6px;
+    }
+
+    .ballContainner {
+        height: 22px;
+    }
+
+    .event {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .promoEvent {
+        height: 392.13px;
+        row-gap: .75rem;
+    }
+
+    #slidePic {
+        width: 100%;
+        max-width: 586.8px;
+        height: 100%;
+        max-height: 244.52px;
+    }
+    
+    .menuCardContain {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .cardImage {
+        max-width: 100%;
+        height: 325.89;
+    }
+
+    .cardTextContain {
+        padding: .5rem;
+        gap: .5rem;
+        width: 100%;
+        height: auto;
+    }
+
+    #bar {
+        height: 6px;
+        width: 22px;
+    }
 }
