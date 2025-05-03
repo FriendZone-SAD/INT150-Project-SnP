@@ -1,7 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
 .snpCard {
-    width: 1170px;
-    height: 640px;
-    padding: 48px;
+    width: 100%;
+    max-width: 1170px;
+    height: 100%;
+    max-height: 654px;
+    padding: 1rem;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -9,13 +15,16 @@
 
 .snapCardCon {
     height: 544px;
-    width: 1074px;
+    width: 100%;
+    max-width: 1074px;
     border-radius: 15px;
     background-image: url("image/snpCard.png");
+    background-size: cover;
 }
 
 .cardDetail {
-    width: 1074px;
+    width: 100%;
+    max-width: 1074px;
     height: 544px;
     padding: 80px 64px 80px 80px;
     display: flex;
@@ -83,4 +92,44 @@
 
 #cardBut {
     padding: 0px;
+}
+
+@media screen and (max-width: 768px) {
+
+    .snpCard {
+        height: 654px;
+    }
+
+    #cardBut {
+        height: 32px;
+        width: 100%;
+        max-width: 335.5px;
+    }
+
+    .profit {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+        width: 100%;
+        max-width: 687px;
+        height: 380px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+    }
+    
+    .snapCardCon {
+        height: 100%;
+        max-height: 622px;
+    }
+
+    .cardDetail {
+        height: 622px;
+    }
+
+    .cardDetail h2 {
+        height: 44px;
+    }
+
+    .cardDetail span {
+        height: 46px;
+    }
 }
