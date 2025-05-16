@@ -68,13 +68,22 @@ body {
 .lowNavCon span {
     color: #5C0923;
     height: 20px;
-    padding: 4px 24px;
+}
+
+.lowNavCon button {
+    padding: .25rem 1.5rem .25rem 1.5rem;
+    line-height: 1.25rem;
+    cursor: pointer;
+    font-weight: 400;
+    border: 0px;
+    border-radius: .25rem;
 }
 
 #member {
     background-color: #da291c;
     color: white;
     height: 32px;
+    border-radius: 15px;
 }
 
 .general {
